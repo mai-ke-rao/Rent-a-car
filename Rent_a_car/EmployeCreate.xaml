@@ -1,0 +1,45 @@
+﻿<Window x:Class="Rent_a_car.EmployeCreate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Rent_a_car"
+        mc:Ignorable="d"
+        Title="EmployeCreate" Height="250" Width="200"
+            WindowStyle="None"
+ResizeMode="NoResize"
+WindowStartupLocation="CenterScreen"
+       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
+    <Grid>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10,0, 0,0" Background="Transparent">
+            <Button Width="25" Height="25" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Black" Click="BtnMinimize">
+                <materialDesign:PackIcon Kind="WindowMinimize" />
+            </Button>
+            <Button Width="25" Height="25" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Black">
+                <materialDesign:PackIcon Kind="Settings" />
+            </Button>
+            <Button Width="25" Height="25" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Black" Click="BtnClose">
+                <materialDesign:PackIcon Kind="Power" />
+            </Button>
+        </StackPanel>
+        <GroupBox Header="Zaposleni prijava" Margin="10" Padding="10">
+            <StackPanel>
+                <TextBlock>Ime:</TextBlock>
+                <TextBox />
+                <TextBlock>Prezime:</TextBlock>
+                <TextBox />
+                <TextBlock>Email:</TextBlock>
+                <TextBox />
+
+                <Grid Margin="0,30,0,0">
+                    <StackPanel Orientation="Vertical" Margin="10,0,0,0"></StackPanel>
+                    <Button Margin="5,10,75,0">Close
+                        </Button>
+                        <Button Margin="75,10,5,0">Next</Button>
+                </Grid>
+                 
+                
+            </StackPanel>
+        </GroupBox>
+    </Grid>
+</Window>
